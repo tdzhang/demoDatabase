@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	h2 Creat New User
+	form(action="/registerNewUser", method="post")
+		h3 username
+		input(type="text", name="username", placeholder="User Name")
+		br
+		h3 email
+		input(type="text", name="email", placeholder="Email")
+		br
+		h3 password
+		input(type="password", name="password", placeholder="Password")
+		br
+		button(type="submit") Submit
+
+	h2 User Login
+	form(action="/userLogin", method="post")
+		h3 email
+		input(type="text", name="email", placeholder="Email")
+		br
+		h3 password
+		input(type="password", name="password", placeholder="Password")
+		br
+		button(type="submit") Submit
+
+
